@@ -1,0 +1,178 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1366px;
+  height: 3651px;
+
+  background: #e5e5e5;
+}
+
+.container {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 1366px;
+  height: 92.51px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+
+  background: #fff;
+}
+.black-logo {
+  position: absolute;
+  width: 159px;
+  height: 146px;
+  left: 62px;
+  top: -50px;
+  z-index: 3;
+
+  background: url(../img/BlackLogo.png) no-repeat bottom;
+}
+
+.nav {
+  position: absolute;
+  height: 24px;
+  top: 51px;
+  left: 305px;
+  z-index: 3;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #060606;
+}
+.inner-nav {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item .language {
+  text-align: center;
+}
+
+.header-ripped-edge {
+  position: absolute;
+  width: 1366px;
+  height: 34.93px;
+  left: -1px;
+  top: 85.07px;
+  z-index: 2;
+
+  background: url(../img/ripped.png);
+}
+
+.video-image {
+  position: absolute;
+  width: 1366px;
+  height: 722px;
+  left: 0px;
+  top: 47px;
+  z-index: 1;
+
+  background: url(../img/SparkleVideo.png);
+}
+
+.play-image {
+  position: absolute;
+  width: 86px;
+  height: 83px;
+  left: 640px;
+  top: 366px;
+  z-index: 2;
+
+  background: url(../img/VectorPlay.png);
+}
+
+.about-company {
+  position: absolute;
+  width: 654px;
+  height: 114px;
+  left: 359px;
+  top: 919px;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #2f4858;
+}
+
+.image-edge {
+  position: absolute;
+  width: 1366px;
+  height: 55px;
+  left: 0;
+  top: 1238px;
+
+  z-index: 2;
+
+  /* background: url("..css/img/ripped.png"); */
+}
+
+.bottom-edge {
+  position: absolute;
+  width: 1366px;
+  height: 55px;
+  left: 0px;
+  top: 1526px;
+
+  background: url(../img/ripped.png);
+
+  transform: rotate(-180deg);
+}
+
+.benefactors {
+  position: absolute;
+  width: 1366px;
+  height: 533.32px;
+  left: 0px;
+  top: 2827px;
+
+  background: #ffcb66;
+}
+
+.section-titel {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #2f4858;
+}
+
+/* @media only screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+} */
