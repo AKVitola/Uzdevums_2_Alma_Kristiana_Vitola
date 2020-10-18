@@ -218,7 +218,7 @@ body {
   justify-content: space-between;
 }
 
-.btn {
+.user-btn {
   width: 233px;
   height: 52px;
 
@@ -227,11 +227,10 @@ body {
   border-radius: 50px;
 
   background-color: #ffa800;
-
   cursor: pointer;
 }
 
-.btn-text {
+.btn {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -248,6 +247,123 @@ body {
 
 .btn:active {
   background-color: #ff8a00;
+}
+
+.form-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #2f4858;
+}
+
+.contact-form {
+  position: absolute;
+  top: 2010px;
+  left: 377px;
+  width: 612px;
+}
+
+.form-field {
+  width: 612px;
+
+  background: rgba(196, 196, 196, 0.4);
+
+  border: 0;
+  border-radius: 6px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 22px;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #2f4858;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 296px;
+}
+
+input[type="email"] {
+  float: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 43px;
+}
+
+.comment-field {
+  height: 232px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.mandatory-info {
+  margin: 0;
+}
+
+.small-form-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f4858;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin: 0;
+
+  background-color: rgba(196, 196, 196, 0.4);
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ff8a00;
+  text-align: center;
+  line-height: 15px;
+}
+
+.submit-form-btn {
+  position: absolute;
+  width: 182px;
+  height: 62px;
+  left: 215px;
+  top: 605px;
+
+  border-radius: 50px;
+  border: 0;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  background: #ffa800;
 }
 
 /* ===Benefactors section=== */
