@@ -3,6 +3,9 @@
 *:after {
   box-sizing: border-box;
 }
+html {
+  font-size: 18px;
+}
 
 html,
 body {
@@ -11,7 +14,9 @@ body {
 
 body {
   margin: 0;
-  font-size: 18px;
+
+  font-size: 1rem;
+  line-height: 1.2rem;
   background: #e5e5e5;
 }
 
@@ -41,7 +46,7 @@ body {
 }
 
 .ripped_header {
-  position: absolute;
+  position: inherit;
   width: 1366px;
   height: 30px;
   left: 0;
@@ -62,7 +67,7 @@ body {
 }
 
 .nav {
-  position: absolute;
+  position: inherit;
   height: 45px;
   width: 999px;
   top: 51px;
@@ -71,28 +76,32 @@ body {
 
   margin: 0;
 
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 22px;
-
   color: #060606;
+}
+
+.nav,
+.about-company,
+.btn,
+.form-field,
+.small-form-text,
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 .inner-nav {
   display: flex;
-  justify-content: space-between;
-
   margin: 0;
   padding: 0;
 
+  justify-content: space-between;
   list-style: none;
 }
 
 .nav-item {
   display: inline-block;
-
   /* transition: border-bottom .3s; */
 }
 
@@ -102,10 +111,6 @@ body {
   /* transition-timing-function: ease-in;
     transition-duration: .7s; */
   /* transition: border-bottom .3s; */
-}
-
-.nav-item .language {
-  text-align: center;
 }
 
 /* ===Introduction section=== */
@@ -118,12 +123,10 @@ body {
   left: 0px;
   top: 47px;
   z-index: 1;
-
   cursor: pointer;
 
   background: url(../img/play.png) no-repeat center,
     url(../img/Sparkle_Video.jpg);
-
   /* filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25)); */
 }
 
@@ -135,16 +138,12 @@ body {
   position: absolute;
   width: 654px;
   height: 114px;
-  left: 359px;
+  left: 356px;
   top: 919px;
 
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 22px;
-  text-align: center;
+  margin: 0;
 
+  text-align: center;
   color: #2f4858;
 }
 
@@ -165,7 +164,7 @@ body {
 .flex-container-gallery::before {
   content: "";
   background-image: url(../img/ripped.svg), url(../img/ripped.png);
-  position: absolute;
+  position: inherit;
   width: 1366px;
   height: 55px;
   left: 0;
@@ -176,7 +175,7 @@ body {
   content: "";
   background-image: url(../img/ripped.svg), url(../img/ripped.png);
   transform: rotate(-180deg);
-  position: absolute;
+  position: inherit;
   width: 1366px;
   height: 55px;
   left: 0px;
@@ -194,15 +193,18 @@ body {
   justify-content: space-around;
 }
 
-.section-titel {
+.section-titel,
+.form-title {
   font-family: "Oswald", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   color: #2f4858;
+  text-align: center;
+}
+
+.section-titel {
+  font-size: 1.3rem;
+  line-height: 2rem;
 
   margin: 0;
 }
@@ -229,13 +231,7 @@ body {
 }
 
 .btn {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 22px;
-  align-items: center;
-  text-align: center;
   color: #ffffff;
 }
 
@@ -247,16 +243,11 @@ body {
   background-color: #ff8a00;
 }
 
-.form-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 44px;
-  text-align: center;
-  text-transform: uppercase;
+/* ===Form section=== */
 
-  color: #2f4858;
+.form-title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .contact-form {
@@ -269,21 +260,12 @@ body {
 .form-field {
   width: 612px;
 
-  background: rgba(196, 196, 196, 0.4);
-
   border: 0;
   border-radius: 6px;
   padding-left: 10px;
   margin-bottom: 15px;
 
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 22px;
-  align-items: center;
-  letter-spacing: -0.015em;
-
+  background: rgba(196, 196, 196, 0.4);
   color: #2f4858;
 }
 
@@ -313,11 +295,8 @@ input[type="tel"] {
 }
 
 .small-form-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.78rem;
+  line-height: 0.94rem;
   color: #2f4858;
 }
 
@@ -330,22 +309,21 @@ input[type="tel"] {
 input[type="checkbox"] {
   width: 16px;
   height: 16px;
+
+  margin: 0;
+  border-radius: 3px;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  margin: 0;
-
   background-color: rgba(196, 196, 196, 0.4);
-  border-radius: 3px;
-
   cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
   background-color: #ff8a00;
   text-align: center;
-  line-height: 15px;
+  line-height: 0.83rem;
 }
 
 .submit-form-btn {
@@ -358,9 +336,8 @@ input[type="checkbox"]:checked {
   border-radius: 50px;
   border: 0;
 
-  font-size: 24px;
-  line-height: 29px;
-
+  font-size: 1.3rem;
+  line-height: 1.6rem;
   background: #ffa800;
 }
 
@@ -384,7 +361,7 @@ input[type="checkbox"]:checked {
 }
 
 .flex-container-logos {
-  position: absolute;
+  position: inherit;
   width: 1030px;
   height: 80px;
   top: 218px;
@@ -404,18 +381,13 @@ input[type="checkbox"]:checked {
   bottom: 0%;
   z-index: 2;
 
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 22px;
   color: #fff;
-
   background-image: url(../img/footer.png);
 }
 
 .flex-container-footer {
-  position: absolute;
+  position: inherit;
   top: 71px;
   right: 63px;
   left: 63px;
@@ -436,20 +408,20 @@ input[type="checkbox"]:checked {
 .copyright-text {
   margin: 0;
 
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.78rem;
+  line-height: 0.94rem;
 }
 
 .footer-nav {
   position: inherit;
-  left: 384px;
+  left: 322px;
 }
 
 .footer-nav-list {
-  list-style: none;
-
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .footer-list-item {
@@ -462,15 +434,15 @@ input[type="checkbox"]:checked {
 
 .bank-account {
   position: inherit;
-  left: 642px;
+  left: 580px;
 }
 
 .footer-title {
   margin: 0;
   padding-bottom: 13px;
 
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
 }
 
 .account-number > p {
