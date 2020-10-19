@@ -22,7 +22,7 @@ body {
 
 .container {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1366px;
   height: 3651px;
 
@@ -30,6 +30,11 @@ body {
   margin: 0 auto;
 
   background: #fff;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===Header=== */
@@ -47,6 +52,7 @@ body {
 
 .ripped_header {
   position: inherit;
+  max-width: 100%;
   width: 1366px;
   height: 30px;
   left: 0;
@@ -151,20 +157,34 @@ body {
 
 .flex-container-gallery {
   position: absolute;
+  max-width: 100%;
   width: 1366px;
   top: 1200px;
   left: 0;
   display: flex;
 }
 
+.first-img,
+.second-img {
+  display: flex;
+  align-items: center;
+}
+
 .row {
-  height: 180px;
+  height: 195px;
+}
+
+.top-img {
+  display: flex;
+  align-items: flex-end;
 }
 
 .flex-container-gallery::before {
   content: "";
   background-image: url(../img/ripped.svg), url(../img/ripped.png);
   position: inherit;
+
+  max-width: 100%;
   width: 1366px;
   height: 55px;
   left: 0;
@@ -176,10 +196,12 @@ body {
   background-image: url(../img/ripped.svg), url(../img/ripped.png);
   transform: rotate(-180deg);
   position: inherit;
+
+  max-width: 100%;
   width: 1366px;
   height: 55px;
-  left: 0px;
-  top: 330px;
+  left: 0;
+  top: 340px;
 }
 
 /* ===Contacts section=== */
@@ -353,6 +375,7 @@ input[type="checkbox"]:checked {
 .benefactors {
   background-image: url(../img/last-segment.png);
   position: absolute;
+  max-width: 100%;
   width: 1366px;
   height: 533.32px;
   left: 0px;
@@ -478,20 +501,233 @@ input[type="checkbox"]:checked {
   right: 0;
 }
 
-/* @media only screen and (min-width: 320px) {
-  .container {
+/* Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .container,
+  .header,
+  .footer,
+  .flex-container-gallery {
     width: 320px;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  /* ===Header=== */
+
+  /* Burgers un overlay menu!!! */
+  .nav {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 1366px) {
-  .container {
-    width: 1366px;
+/*iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container,
+  .header,
+  .footer,
+  .flex-container-gallery {
+    width: 481px;
   }
-} */
+
+  /* ===Header=== */
+
+  /* Burgers un overlay menu!!! */
+  .nav {
+    display: none;
+  }
+}
+
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .container,
+  .header,
+  .footer,
+  .flex-container-gallery {
+    width: 769px;
+  }
+
+  /* ===Header=== */
+
+  /* Burgers un overlay menu!!! */
+  .nav {
+    display: none;
+  }
+}
+
+/*Desktops, large screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container,
+  .header,
+  .footer,
+  .flex-container-gallery {
+    width: 992px;
+  }
+
+  /* ===Header=== */
+
+  .black-logo {
+    left: 3px;
+  }
+
+  .nav {
+    left: 154px;
+    width: 830px;
+  }
+
+  /* ===Introduction section=== */
+
+  .video {
+    width: 992px;
+    height: auto;
+    background-size: auto, contain;
+  }
+
+  .about-company {
+    left: 169px;
+  }
+
+  /* ===Gallery section===*/
+
+  .flex-container-gallery::before {
+    top: 45px;
+  }
+
+  .last-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container-gallery::after {
+    top: 285px;
+  }
+
+  /* ===Contacts section=== */
+
+  .flex-container-contacts {
+    left: 7px;
+  }
+
+  .flex-container-btn {
+    left: 112px;
+  }
+
+  .contact-form {
+    left: 190px;
+  }
+
+  /* ===Benefactors section=== */
+
+  /* .benefactors {
+    top: 2590px;
+  } */
+
+  /* jādabū lai iet! */
+
+  .benefactors-titel {
+    left: 299px;
+  }
+
+  .flex-container-logos {
+    left: 46px;
+    width: 900px;
+  }
+
+  /* ===Footer=== */
+
+  .flex-container-footer {
+    left: 36px;
+    right: 36px;
+  }
+
+  .footer-nav {
+    left: 200px;
+  }
+
+  .bank-account {
+    left: 350px;
+  }
+}
+
+/* Extra large screens, TV */
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .container,
+  .header,
+  .footer,
+  .video,
+  .flex-container-gallery {
+    width: 1200px;
+  }
+
+  /* ===Header=== */
+
+  .nav {
+    width: 870px;
+  }
+
+  /* ===Introduction section=== */
+
+  .video {
+    width: 1200px;
+    height: auto;
+    background-size: auto, contain;
+  }
+
+  .about-company {
+    top: 797px;
+    left: 273px;
+  }
+
+  /* ===Gallery section===*/
+
+  .flex-container-gallery {
+    top: 1061px;
+  }
+
+  .flex-container-gallery::before {
+    top: 20px;
+  }
+
+  .last-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container-gallery::after {
+    top: 315px;
+  }
+
+  /* ===Contacts section=== */
+
+  .flex-container-contacts {
+    top: 1600px;
+    left: 111px;
+  }
+
+  .flex-container-btn {
+    top: 1686px;
+    left: 220px;
+  }
+
+  .contact-form {
+    top: 1888px;
+    left: 294px;
+  }
+
+  /* ===Benefactors section=== */
+
+  .benefactors-titel {
+    left: 403px;
+  }
+
+  .flex-container-logos {
+    left: 85px;
+  }
+
+  /* ===Footer=== */
+
+  .footer-nav {
+    left: 250px;
+  }
+
+  .bank-account {
+    left: 470px;
+  }
+}
