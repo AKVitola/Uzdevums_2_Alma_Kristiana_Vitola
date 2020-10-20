@@ -270,6 +270,8 @@ body {
 .form-title {
   font-size: 1.6rem;
   line-height: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 55px;
 }
 
 .contact-form {
@@ -501,7 +503,12 @@ input[type="checkbox"]:checked {
   right: 0;
 }
 
-/* Mobile devices */
+/*=====
+  Media
+======*/
+
+/* Mobile devices
+================= */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .container,
   .header,
@@ -518,7 +525,8 @@ input[type="checkbox"]:checked {
   }
 }
 
-/*iPads, Tablets */
+/*iPads, Tablets
+================ */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .container,
   .header,
@@ -535,7 +543,8 @@ input[type="checkbox"]:checked {
   }
 }
 
-/* Small screens, laptops */
+/*Small screens, laptops
+======================== */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .container,
   .header,
@@ -552,13 +561,18 @@ input[type="checkbox"]:checked {
   }
 }
 
-/*Desktops, large screens */
+/*Desktops, large screens
+=========================*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container,
   .header,
   .footer,
   .flex-container-gallery {
     width: 992px;
+  }
+
+  .container {
+    height: 3264px;
   }
 
   /* ===Header=== */
@@ -577,14 +591,19 @@ input[type="checkbox"]:checked {
   .video {
     width: 992px;
     height: auto;
-    background-size: auto, contain;
+    background-size: 80px 80px, contain;
   }
 
   .about-company {
+    top: 693px;
     left: 169px;
   }
 
   /* ===Gallery section===*/
+
+  .flex-container-gallery {
+    top: 900px;
+  }
 
   .flex-container-gallery::before {
     top: 45px;
@@ -602,24 +621,29 @@ input[type="checkbox"]:checked {
   /* ===Contacts section=== */
 
   .flex-container-contacts {
-    left: 7px;
+    top: 1342px;
+    left: 57px;
+
+    width: 878px;
   }
 
   .flex-container-btn {
-    left: 112px;
+    top: 1428px;
+    left: 138px;
+
+    width: 680px;
   }
 
   .contact-form {
+    top: 1630px;
     left: 190px;
   }
 
   /* ===Benefactors section=== */
 
-  /* .benefactors {
-    top: 2590px;
-  } */
-
-  /* jādabū lai iet! */
+  .benefactors {
+    top: 2439px;
+  }
 
   .benefactors-titel {
     left: 299px;
@@ -631,6 +655,10 @@ input[type="checkbox"]:checked {
   }
 
   /* ===Footer=== */
+
+  .footer {
+    top: 2889px;
+  }
 
   .flex-container-footer {
     left: 36px;
@@ -646,14 +674,20 @@ input[type="checkbox"]:checked {
   }
 }
 
-/* Extra large screens, TV */
+/*Extra large screens, TV*
+=======================*/
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
   .container,
   .header,
+  .ripped_header,
   .footer,
   .video,
   .flex-container-gallery {
     width: 1200px;
+  }
+
+  .container {
+    height: 3516px;
   }
 
   /* ===Header=== */
@@ -667,7 +701,7 @@ input[type="checkbox"]:checked {
   .video {
     width: 1200px;
     height: auto;
-    background-size: auto, contain;
+    background-size: 86px 83px, contain;
   }
 
   .about-company {
@@ -713,6 +747,10 @@ input[type="checkbox"]:checked {
 
   /* ===Benefactors section=== */
 
+  .benefactors {
+    top: 2690px;
+  }
+
   .benefactors-titel {
     left: 403px;
   }
@@ -722,6 +760,10 @@ input[type="checkbox"]:checked {
   }
 
   /* ===Footer=== */
+
+  .footer {
+    top: 3140px;
+  }
 
   .footer-nav {
     left: 250px;
