@@ -233,8 +233,8 @@ body {
 
 .flex-container-btn {
   position: absolute;
-  width: 710px;
-  left: 330px;
+  width: 720px;
+  left: 320px;
   top: 1810px;
   display: flex;
   justify-content: space-between;
@@ -376,6 +376,7 @@ input[type="checkbox"]:checked {
 
 .benefactors {
   background-image: url(../img/last-segment.png);
+  background-repeat: no-repeat;
   position: absolute;
   max-width: 100%;
   width: 1366px;
@@ -409,6 +410,7 @@ input[type="checkbox"]:checked {
   font-weight: 500;
   color: #fff;
   background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
 }
 
 .flex-container-footer {
@@ -488,6 +490,10 @@ input[type="checkbox"]:checked {
   padding-bottom: 10px;
 }
 
+.route-to-accoount {
+  display: none;
+}
+
 .social-media {
   position: inherit;
   bottom: 72px;
@@ -527,7 +533,7 @@ input[type="checkbox"]:checked {
 
 /*iPads, Tablets
 ================ */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .container,
   .header,
   .footer,
@@ -543,21 +549,207 @@ input[type="checkbox"]:checked {
   }
 }
 
-/*Small screens, laptops
+/* 768px - my tablet size. (Small screens, laptops)
 ======================== */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .container,
   .header,
   .footer,
   .flex-container-gallery {
-    width: 769px;
+    width: 768px;
+  }
+
+  .container {
+    height: 3004px;
   }
 
   /* ===Header=== */
 
+  .black-logo {
+    left: 80px;
+  }
+
   /* Burgers un overlay menu!!! */
   .nav {
     display: none;
+  }
+
+  /* ===Introduction section=== */
+
+  .video {
+    width: 769px;
+    height: 406px;
+    background-size: 86px 83px, contain;
+  }
+
+  .about-company {
+    width: 608px;
+    height: 140px;
+    left: 80px;
+    top: 627px;
+  }
+
+  /* ===Gallery section===*/
+
+  .flex-container-gallery {
+    top: 827px;
+  }
+
+  .flex-container-gallery::before {
+    top: 70px;
+  }
+
+  .last-img {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container-gallery::after {
+    top: 257px;
+  }
+
+  /* ===Contacts section=== */
+
+  .flex-container-contacts {
+    top: 1291px;
+    left: 80px;
+
+    width: 608px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .contacts-row {
+    width: 233px;
+  }
+
+  .section-titel {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .flex-container-btn {
+    width: 608px;
+    left: 80px;
+    top: 1395px;
+  }
+
+  .contact-form {
+    left: 80px;
+    top: 1597px;
+  }
+
+  .form-title {
+    margin-bottom: 60px;
+  }
+
+  /* ===Benefactors section=== */
+
+  .benefactors {
+    top: 2375px;
+    height: 299.85px;
+  }
+
+  .benefactors-titel {
+    left: 273px;
+    top: 56px;
+    width: 222px;
+    height: 34px;
+  }
+
+  .benefactors-titel > .section-titel {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .flex-container-logos {
+    left: 80px;
+    top: 126px;
+    width: 608px;
+  }
+
+  .logo-teikums img,
+  .logo-citybee img {
+    width: 143px;
+  }
+
+  .logo-linearis img {
+    width: 49px;
+  }
+
+  .logo-sem img {
+    width: 123px;
+  }
+
+  /* ===Footer=== */
+
+  .footer {
+    top: 2628px;
+    height: 376px;
+  }
+
+  .flex-container-footer {
+    right: 80px;
+    top: 80px;
+    bottom: 0;
+  }
+
+  .golden-logo img {
+    width: 162px;
+    height: 162px;
+  }
+
+  .copyright {
+    bottom: 40px;
+  }
+
+  .copyright-text {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .social-media {
+    bottom: 90px;
+  }
+
+  .fb-icon {
+    padding-right: 34.5px;
+  }
+
+  .fb-icon,
+  .ig-icon {
+    height: 25px;
+  }
+
+  .owner-name {
+    position: absolute;
+    top: 144px;
+    right: 473px;
+    width: 225px;
+  }
+
+  .line-break {
+    display: none;
+  }
+
+  .footer-nav,
+  .bank-account {
+    display: none;
+  }
+
+  .adress {
+    top: 40px;
+  }
+
+  .route-to-accoount {
+    display: block;
+  }
+
+  .route-to-accoount > p {
+    margin: 0;
+    font-weight: bold;
   }
 }
 
@@ -591,7 +783,7 @@ input[type="checkbox"]:checked {
   .video {
     width: 992px;
     height: auto;
-    background-size: 80px 80px, contain;
+    background-size: 86px 83px, contain;
   }
 
   .about-company {
@@ -629,7 +821,7 @@ input[type="checkbox"]:checked {
 
   .flex-container-btn {
     top: 1428px;
-    left: 138px;
+    left: 128px;
 
     width: 680px;
   }
@@ -662,7 +854,6 @@ input[type="checkbox"]:checked {
 
   .flex-container-footer {
     left: 36px;
-    right: 36px;
   }
 
   .footer-nav {
