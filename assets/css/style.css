@@ -170,7 +170,7 @@ body {
   align-items: center;
 }
 
-.row {
+.row-inner {
   height: 195px;
 }
 
@@ -509,9 +509,9 @@ input[type="checkbox"]:checked {
   right: 0;
 }
 
-/*=====
-  Media
-======*/
+/*========================================
+                 Media
+=========================================*/
 
 /* Mobile devices
 ================= */
@@ -523,11 +523,103 @@ input[type="checkbox"]:checked {
     width: 320px;
   }
 
+  /* .container {
+    height: 3004px;
+  } */
+
   /* ===Header=== */
+
+  .header {
+    height: 45px;
+  }
+
+  .ripped_header {
+    top: 30px;
+  }
+
+  .black-logo {
+    left: 20px;
+    width: 78px;
+    height: auto;
+  }
 
   /* Burgers un overlay menu!!! */
   .nav {
     display: none;
+  }
+
+  /* ===Introduction section=== */
+
+  .video {
+    width: 320px;
+    height: auto;
+    background-size: 50px 48px, contain;
+  }
+
+  .about-company {
+    top: 287px;
+    left: 20px;
+    width: 280px;
+    height: 124px;
+
+    font-size: 0.6rem;
+    line-height: 0.83rem;
+  }
+
+  /* ===Gallery section===*/
+
+  .flex-container-gallery {
+    top: 357px;
+    display: flex;
+  }
+
+  .flex-container-gallery.wrap {
+    flex-wrap: wrap;
+  }
+
+  .first-img {
+    order: 3;
+  }
+
+  .second-img {
+    order: 4;
+  }
+
+  .first-img img,
+  .second-img img {
+    width: 160px;
+    height: 174.5px;
+  }
+
+  .colage-img {
+    order: 1;
+  }
+
+  .colage-img img {
+    width: 136px;
+  }
+
+  .bottom-img {
+    height: 84px;
+  }
+
+  .last-img {
+    order: 2;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .last-img img {
+    width: 184px;
+    height: 173px;
+  }
+
+  .flex-container-gallery::before {
+    top: 87px;
+  }
+
+  .flex-container-gallery::after {
+    top: 422px;
   }
 }
 
@@ -541,11 +633,103 @@ input[type="checkbox"]:checked {
     width: 481px;
   }
 
+  /* .container {
+    height: 3004px;
+  } */
+
   /* ===Header=== */
+
+  .header {
+    height: 50px;
+  }
+
+  .ripped_header {
+    top: 37px;
+  }
+
+  .black-logo {
+    left: 50px;
+    width: 88px;
+    height: auto;
+  }
 
   /* Burgers un overlay menu!!! */
   .nav {
     display: none;
+  }
+
+  /* ===Introduction section=== */
+
+  .video {
+    width: 481px;
+    height: auto;
+    background-size: 66px 63px, contain;
+  }
+
+  .about-company {
+    top: 367px;
+    left: 100px;
+    width: 280px;
+    height: 124px;
+
+    font-size: 0.6rem;
+    line-height: 0.83rem;
+  }
+
+  /* ===Gallery section===*/
+
+  .flex-container-gallery {
+    top: 501px;
+    display: flex;
+  }
+
+  .flex-container-gallery.wrap {
+    flex-wrap: wrap;
+  }
+
+  .first-img {
+    order: 3;
+  }
+
+  .second-img {
+    order: 4;
+  }
+
+  .first-img img,
+  .second-img img {
+    width: 240.5px;
+    height: 261px;
+  }
+
+  .colage-img {
+    order: 1;
+  }
+
+  .colage-img img {
+    width: 208px;
+  }
+
+  .bottom-img {
+    height: 128px;
+  }
+
+  .last-img {
+    order: 2;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .last-img img {
+    width: 273px;
+    height: 258px;
+  }
+
+  .flex-container-gallery::before {
+    top: 42px;
+  }
+
+  .flex-container-gallery::after {
+    top: 542px;
   }
 }
 
@@ -565,8 +749,18 @@ input[type="checkbox"]:checked {
 
   /* ===Header=== */
 
+  .header {
+    height: 74px;
+  }
+
+  .ripped_header {
+    top: 65px;
+  }
+
   .black-logo {
     left: 80px;
+    width: 128px;
+    height: auto;
   }
 
   /* Burgers un overlay menu!!! */
@@ -577,6 +771,7 @@ input[type="checkbox"]:checked {
   /* ===Introduction section=== */
 
   .video {
+    top: 71px;
     width: 769px;
     height: 406px;
     background-size: 86px 83px, contain;
