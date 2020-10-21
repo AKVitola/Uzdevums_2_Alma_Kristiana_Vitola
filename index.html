@@ -69,22 +69,24 @@
       </section>
 
       <section class="contacts">
-        <div class="flex-container-contacts">
-          <div class="contacts-row">
-            <h3 class="section-titel">Vēlies piepildīt savu sapni?</h3>
+          <div class="flex-container-contacts">
+            <div class="contacts-row upper-text">
+              <h3 class="section-titel">Vēlies piepildīt savu sapni?</h3>
+            </div>
+            <div class="contacts-row">
+              <h3 class="section-titel"> Vēlies palīdzēt kādam piepildīt sapni?</h3>
+            </div>
           </div>
-          <div class="contacts-row">
-            <h3 class="section-titel"> Vēlies palīdzēt kādam piepildīt sapni?</h3>
-          </div>
-        </div>
 
-        <div class="flex-container-btn">
-          <a href="/">
-            <button class="btn user-btn btn-text">Sapņotājiem</button>
-          </a>
-          <a href="/">
-            <button class="btn user-btn">Uzņēmējiem</button>
-          </a>
+          <div class="flex-container-btn">
+            <a href="/">
+              <button class="btn user-btn btn-text">Sapņotājiem</button>
+            </a>
+            <div class="lower-btn">
+              <a href="/">
+                <button class="btn user-btn">Uzņēmējiem</button>
+              </a>
+            </div>
         </div>
 
         <form class="contact-form" action="/">
@@ -98,8 +100,10 @@
           <div class="checkbox">
             <input type="checkbox" id="agree" name="agree" required>
           </div>
-          <label class="small-form-text" for="agree">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs
-          nepieciešams.</label> <br>
+          <div class="text-block">
+            <label class="small-form-text" for="agree">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs
+            nepieciešams.</label> <br>
+          </div>
           <input class="btn submit-form-btn" type="submit" formtarget="_blank" value="Sūtīt">
         </form>
       </section>

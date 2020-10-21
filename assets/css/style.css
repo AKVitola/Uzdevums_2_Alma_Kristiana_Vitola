@@ -350,6 +350,13 @@ input[type="checkbox"]:checked {
   line-height: 0.83rem;
 }
 
+.text-block {
+  width: 576px;
+  display: inline;
+  float: right;
+  margin-top: 25px;
+}
+
 .submit-form-btn {
   position: absolute;
   width: 182px;
@@ -523,9 +530,9 @@ input[type="checkbox"]:checked {
     width: 320px;
   }
 
-  /* .container {
-    height: 3004px;
-  } */
+  .container {
+    height: 2904px;
+  }
 
   /* ===Header=== */
 
@@ -621,6 +628,219 @@ input[type="checkbox"]:checked {
   .flex-container-gallery::after {
     top: 422px;
   }
+
+  /* ===Contacts section=== */
+
+  .flex-container-contacts {
+    top: 930px;
+    left: 20px;
+    width: 280px;
+    flex-direction: column;
+  }
+
+  .contacts-row.upper-text {
+    margin-bottom: 160px;
+  }
+
+  .flex-container-btn {
+    top: 987px;
+    left: 43.5px;
+    width: 233px;
+    flex-direction: column;
+  }
+
+  .lower-btn {
+    margin-top: 165px;
+  }
+
+  .section-titel {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .contact-form {
+    top: 1380px;
+    left: 20px;
+    width: 280px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  .form-field {
+    width: 280px;
+
+    margin-bottom: 10px;
+
+    font-size: 0.7rem;
+    line-height: 0.94rem;
+  }
+
+  .form-title {
+    margin-bottom: 30px;
+
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .comment-field {
+    height: 150px;
+  }
+
+  .small-form-text {
+    margin-top: 0;
+
+    font-size: 0.6rem;
+    line-height: 0.83rem;
+  }
+
+  .checkbox {
+    margin-top: 10px;
+  }
+
+  .text-block {
+    width: 243px;
+    display: inline;
+    float: right;
+
+    margin-top: 10px;
+  }
+
+  .submit-form-btn {
+    width: 140px;
+    height: 48px;
+    left: 70px;
+    top: 548px;
+
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  /* ===Benefactors section=== */
+
+  .benefactors {
+    top: 2093px;
+    height: 732px;
+  }
+
+  .benefactors-titel {
+    width: 320px;
+    left: 0;
+  }
+
+  .benefactors-titel > .section-titel {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .flex-container-logos {
+    width: 280px;
+    height: 220px;
+    left: 20px;
+    top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .logo-teikums img,
+  .logo-citybee img,
+  .logo-sem img {
+    width: 130px;
+  }
+
+  .logo-linearis img {
+    width: 48px;
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+
+  /* ===Footer=== */
+
+  .footer {
+    top: 2527px;
+    height: 483px;
+    background-size: cover;
+  }
+
+  .flex-container-footer {
+    left: 20px;
+    top: 60px;
+    bottom: 0;
+  }
+
+  .golden-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-nav,
+  .bank-account {
+    display: none;
+  }
+
+  .line-break {
+    display: none;
+  }
+
+  .adress {
+    position: absolute;
+    right: -65px;
+    top: 135px;
+    width: 300px;
+
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .owner-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+
+  .route-to-accoount {
+    display: block;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .route-to-accoount > p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .social-media {
+    right: 168px;
+    top: 272px;
+    height: 25px;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .fb-icon,
+  .ig-icon {
+    height: 25px;
+  }
+
+  .copyright {
+    bottom: 51px;
+    width: 280px;
+  }
+
+  .private {
+    width: 200px;
+    bottom: 30px;
+    right: 37px;
+  }
+
+  .copyright-text {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 /*iPads, Tablets
@@ -633,9 +853,9 @@ input[type="checkbox"]:checked {
     width: 481px;
   }
 
-  /* .container {
-    height: 3004px;
-  } */
+  .container {
+    height: 3400px;
+  }
 
   /* ===Header=== */
 
@@ -667,19 +887,19 @@ input[type="checkbox"]:checked {
   }
 
   .about-company {
-    top: 367px;
-    left: 100px;
-    width: 280px;
+    top: 368px;
+    left: 50.5px;
+    width: 380px;
     height: 124px;
 
-    font-size: 0.6rem;
-    line-height: 0.83rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
 
   /* ===Gallery section===*/
 
   .flex-container-gallery {
-    top: 501px;
+    top: 531px;
     display: flex;
   }
 
@@ -731,6 +951,196 @@ input[type="checkbox"]:checked {
   .flex-container-gallery::after {
     top: 542px;
   }
+
+  /* ===Contacts section=== */
+
+  .flex-container-contacts {
+    top: 1270px;
+    left: 0;
+    flex-direction: column;
+  }
+
+  .contacts-row {
+    width: 481px;
+    align-items: center;
+  }
+
+  .contacts-row.upper-text {
+    margin-bottom: 160px;
+  }
+
+  .flex-container-btn {
+    top: 1336px;
+    left: 124px;
+    width: 233px;
+    flex-direction: column;
+  }
+
+  .lower-btn {
+    margin-top: 148px;
+  }
+
+  .contact-form {
+    top: 1750px;
+    left: 20px;
+    width: 441px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  .form-field {
+    width: 441px;
+  }
+
+  .form-title {
+    margin-bottom: 45px;
+  }
+
+  .small-form-text {
+    margin-top: 0;
+  }
+
+  .checkbox {
+    margin-top: 10px;
+  }
+
+  .text-block {
+    width: 400px;
+    display: inline;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .submit-form-btn {
+    left: 130.5px;
+    top: 658px;
+  }
+
+  /* ===Benefactors section=== */
+
+  .benefactors {
+    top: 2600px;
+    height: 732px;
+  }
+
+  .benefactors-titel {
+    width: 440px;
+    left: 20.5px;
+  }
+
+  .benefactors-titel > .section-titel {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .flex-container-logos {
+    width: 380px;
+    height: 220px;
+    left: 50.5px;
+    top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .logo-teikums img,
+  .logo-citybee img,
+  .logo-sem img {
+    width: 163px;
+  }
+
+  .logo-linearis img {
+    width: 58px;
+    margin-left: 90px;
+    margin-right: 60px;
+  }
+
+  /* ===Footer=== */
+
+  .footer {
+    top: 3033px;
+    height: 483px;
+    background-size: cover;
+  }
+
+  .flex-container-footer {
+    left: 50px;
+    top: 60px;
+    bottom: 0;
+  }
+
+  .golden-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-nav,
+  .bank-account {
+    display: none;
+  }
+
+  .line-break {
+    display: none;
+  }
+
+  .adress {
+    position: absolute;
+    right: 67px;
+    top: 135px;
+    width: 300px;
+
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .owner-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+
+  .route-to-accoount {
+    display: block;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .route-to-accoount > p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .social-media {
+    right: 300px;
+    top: 272px;
+    height: 25px;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .fb-icon,
+  .ig-icon {
+    height: 25px;
+  }
+
+  .copyright {
+    bottom: 51px;
+  }
+
+  .private {
+    width: 200px;
+    bottom: 30px;
+    right: 167px;
+  }
+
+  .copyright-text {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 /* 768px - my tablet size. (Small screens, laptops)
@@ -744,7 +1154,7 @@ input[type="checkbox"]:checked {
   }
 
   .container {
-    height: 3004px;
+    height: 2990px;
   }
 
   /* ===Header=== */
@@ -840,10 +1250,25 @@ input[type="checkbox"]:checked {
     margin-bottom: 60px;
   }
 
+  .text-block {
+    width: 550px;
+    display: inline;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .checkbox {
+    margin-top: 13px;
+  }
+
+  .submit-form-btn {
+    top: 589px;
+  }
+
   /* ===Benefactors section=== */
 
   .benefactors {
-    top: 2375px;
+    top: 2364px;
     height: 299.85px;
   }
 
@@ -881,7 +1306,7 @@ input[type="checkbox"]:checked {
   /* ===Footer=== */
 
   .footer {
-    top: 2628px;
+    top: 2617px;
     height: 376px;
   }
 
@@ -1026,10 +1451,25 @@ input[type="checkbox"]:checked {
     left: 190px;
   }
 
+  .text-block {
+    width: 570px;
+    display: inline;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .checkbox {
+    margin-top: 25px;
+  }
+
+  .submit-form-btn {
+    top: 599px;
+  }
+
   /* ===Benefactors section=== */
 
   .benefactors {
-    top: 2439px;
+    top: 2449px;
   }
 
   .benefactors-titel {
@@ -1044,11 +1484,12 @@ input[type="checkbox"]:checked {
   /* ===Footer=== */
 
   .footer {
-    top: 2889px;
+    top: 2899px;
   }
 
   .flex-container-footer {
     left: 36px;
+    right: 36px;
   }
 
   .footer-nav {
@@ -1129,6 +1570,17 @@ input[type="checkbox"]:checked {
   .contact-form {
     top: 1888px;
     left: 294px;
+  }
+
+  .text-block {
+    width: 575px;
+    display: inline;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .checkbox {
+    margin-top: 25px;
   }
 
   /* ===Benefactors section=== */
