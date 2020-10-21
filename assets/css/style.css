@@ -15,14 +15,13 @@ body {
 body {
   margin: 0;
 
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 18px;
+  line-height: 22px;
   background: #e5e5e5;
 }
 
 .container {
   position: relative;
-  /* width: 100%; */
   max-width: 1366px;
   height: 3651px;
 
@@ -93,8 +92,8 @@ body {
 .small-form-text,
 .footer {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .inner-nav {
@@ -225,8 +224,8 @@ body {
 }
 
 .section-titel {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 36px;
 
   margin: 0;
 }
@@ -268,8 +267,8 @@ body {
 /* ===Form section=== */
 
 .form-title {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 30px;
+  line-height: 44px;
   margin-top: 0;
   margin-bottom: 55px;
 }
@@ -319,8 +318,8 @@ input[type="tel"] {
 }
 
 .small-form-text {
-  font-size: 0.78rem;
-  line-height: 0.94rem;
+  font-size: 14px;
+  line-height: 17px;
   color: #2f4858;
 }
 
@@ -367,8 +366,8 @@ input[type="checkbox"]:checked {
   border-radius: 50px;
   border: 0;
 
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 24px;
+  line-height: 29px;
   background: #ffa800;
 }
 
@@ -410,8 +409,8 @@ input[type="checkbox"]:checked {
   position: absolute;
   width: 1366px;
   height: 376px;
-  left: 0%;
-  bottom: 0%;
+  left: 0;
+  bottom: 0;
   z-index: 2;
 
   font-weight: 500;
@@ -442,8 +441,8 @@ input[type="checkbox"]:checked {
 .copyright-text {
   margin: 0;
 
-  font-size: 0.78rem;
-  line-height: 0.94rem;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .footer-nav {
@@ -475,8 +474,8 @@ input[type="checkbox"]:checked {
   margin: 0;
   padding-bottom: 13px;
 
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .account-number > p {
@@ -569,8 +568,8 @@ input[type="checkbox"]:checked {
     width: 280px;
     height: 124px;
 
-    font-size: 0.6rem;
-    line-height: 0.83rem;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   /* ===Gallery section===*/
@@ -654,8 +653,8 @@ input[type="checkbox"]:checked {
   }
 
   .section-titel {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .contact-form {
@@ -672,15 +671,15 @@ input[type="checkbox"]:checked {
 
     margin-bottom: 10px;
 
-    font-size: 0.7rem;
-    line-height: 0.94rem;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .form-title {
     margin-bottom: 30px;
 
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .comment-field {
@@ -690,8 +689,8 @@ input[type="checkbox"]:checked {
   .small-form-text {
     margin-top: 0;
 
-    font-size: 0.6rem;
-    line-height: 0.83rem;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .checkbox {
@@ -712,8 +711,8 @@ input[type="checkbox"]:checked {
     left: 70px;
     top: 548px;
 
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   /* ===Benefactors section=== */
@@ -892,8 +891,8 @@ input[type="checkbox"]:checked {
     width: 380px;
     height: 124px;
 
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   /* ===Gallery section===*/
@@ -1182,7 +1181,7 @@ input[type="checkbox"]:checked {
 
   .video {
     top: 71px;
-    width: 769px;
+    width: 768px;
     height: 406px;
     background-size: 86px 83px, contain;
   }
@@ -1231,8 +1230,8 @@ input[type="checkbox"]:checked {
   }
 
   .section-titel {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .flex-container-btn {
@@ -1280,8 +1279,8 @@ input[type="checkbox"]:checked {
   }
 
   .benefactors-titel > .section-titel {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .flex-container-logos {
@@ -1326,8 +1325,8 @@ input[type="checkbox"]:checked {
   }
 
   .copyright-text {
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .social-media {
