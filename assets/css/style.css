@@ -107,11 +107,44 @@ body {
 
 .nav-item {
   display: inline-block;
+  padding-bottom: 3px;
 }
 
 .nav-item:hover,
-.active {
+.footer-list-item:hover {
   font-weight: bold;
+}
+
+/* === Underline animation for nav === */
+
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+
+  background-color: #ffa800;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-animation:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.shostest-line.underline-animation:hover::before {
+  width: 30%;
+}
+
+.medium-line.underline-animation:hover::before {
+  width: 82%;
 }
 
 /* ===Menu icon=== */
@@ -507,10 +540,7 @@ input[type="checkbox"]:checked {
 
 .footer-list-item {
   margin-bottom: 21px;
-}
-
-.footer-list-item:hover {
-  border-bottom: 3px solid #ffa800;
+  padding-bottom: 3px;
 }
 
 .bank-account {
