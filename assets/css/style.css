@@ -107,15 +107,63 @@ body {
 
 .nav-item {
   display: inline-block;
-  /* transition: border-bottom .3s; */
 }
 
 .nav-item:hover,
 .active {
-  border-bottom: 3px solid #ffa800;
-  /* transition-timing-function: ease-in;
-    transition-duration: .7s; */
-  /* transition: border-bottom .3s; */
+  font-weight: bold;
+}
+
+/* ===Menu icon=== */
+
+.menu-icon {
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  display: none;
+  z-index: 3;
+
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #000;
+  margin: 4.5px 0;
+
+  transition: 0.4s;
+  z-index: 2;
+}
+
+/* ===Go to top button=== */
+
+.topButtonContainer {
+  position: absolute;
+  right: 70px;
+}
+
+.toTop-Button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 3;
+
+  border: none;
+  outline: none;
+
+  transform: rotate(-90deg);
+  background-color: transparent;
+  color: #ffa800;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.toTop-Button:hover {
+  color: #ffda16;
 }
 
 /* ===Introduction section=== */
@@ -253,7 +301,7 @@ body {
 
 .btn {
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn:hover {
@@ -521,7 +569,7 @@ input[type="checkbox"]:checked {
 
 /* Mobile devices
 ================= */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .container,
   .header,
   .footer,
@@ -549,9 +597,60 @@ input[type="checkbox"]:checked {
     height: auto;
   }
 
-  /* Burgers un overlay menu!!! */
+  .menu-icon {
+    top: 13px;
+    right: 20px;
+    display: block;
+  }
+
+  /* === Overlay menu=== */
+
   .nav {
-    display: none;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+  }
+
+  .nav-lang-item {
+    position: relative;
+    top: -375px;
+  }
+
+  .inner-nav {
+    position: relative;
+    top: 18%;
+    margin: 15% 20%;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 15px 0;
+    padding: 0;
+
+    font-size: 18px;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* ===Go to top button=== */
+
+  .topButtonContainer {
+    right: 45px;
+  }
+
+  .toTop-Button {
+    font-size: 40px;
   }
 
   /* ===Introduction section=== */
@@ -622,6 +721,7 @@ input[type="checkbox"]:checked {
 
   .flex-container-gallery::before {
     top: 87px;
+    z-index: 1;
   }
 
   .flex-container-gallery::after {
@@ -872,9 +972,60 @@ input[type="checkbox"]:checked {
     height: auto;
   }
 
-  /* Burgers un overlay menu!!! */
+  .menu-icon {
+    top: 13px;
+    right: 50px;
+
+    display: block;
+  }
+
+  /* === Overlay menu=== */
+
   .nav {
-    display: none;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+  }
+
+  .nav-lang-item {
+    position: relative;
+    top: -460px;
+  }
+
+  .inner-nav {
+    position: relative;
+    top: 13%;
+    margin: 15% 22%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+    padding: 0;
+
+    font-size: 25px;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* ===Go to top button=== */
+
+  .topButtonContainer {
+    right: 60px;
+  }
+
+  .toTop-Button {
+    font-size: 50px;
   }
 
   /* ===Introduction section=== */
@@ -945,6 +1096,7 @@ input[type="checkbox"]:checked {
 
   .flex-container-gallery::before {
     top: 42px;
+    z-index: 1;
   }
 
   .flex-container-gallery::after {
@@ -1172,9 +1324,65 @@ input[type="checkbox"]:checked {
     height: auto;
   }
 
-  /* Burgers un overlay menu!!! */
+  /* === Overlay menu=== */
+
   .nav {
-    display: none;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+  }
+
+  .nav-lang-item {
+    position: relative;
+    top: -530px;
+  }
+
+  .inner-nav {
+    position: relative;
+    top: 13%;
+    margin: 15% 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 25px 0;
+    padding: 0;
+
+    font-size: 25px;
+    color: #000;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* ===Menu Icon=== */
+
+  .menu-icon {
+    top: 25px;
+    right: 80px;
+
+    display: block;
+    width: 30px;
+    height: 50px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 0.1px;
+
+    margin: 7px 0;
+    padding: 2px;
+    border-radius: 70px;
   }
 
   /* ===Introduction section=== */
@@ -1201,6 +1409,7 @@ input[type="checkbox"]:checked {
 
   .flex-container-gallery::before {
     top: 70px;
+    z-index: 1;
   }
 
   .last-img {

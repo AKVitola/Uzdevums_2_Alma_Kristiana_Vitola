@@ -20,23 +20,30 @@
       <a href="/">
         <img class="black-logo" src="assets/img/BlackLogo.png" alt="Melnbalts kompānijas logo.">
       </a>
+
+      <span class="menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </span>
+
       <div class="ripped_header"></div>
 
-      <nav class="nav">
+      <nav class="nav" id="js-nav">
         <ul class="inner-nav">
-          <li class="nav-item active">Ideja</li>
+          <li class="nav-item">Ideja</li>
           <li class="nav-item">Piesaki Sapni</li>
           <li class="nav-item">Uzņēmējiem</li>
           <li class="nav-item">Sapņa banka</li>
           <li class="nav-item">Sapņus atbalsta</li>
           <li class="nav-item">99 Iedvesmas stāsti</li>
-          <li class="nav-item">LV</li>
+          <li class="nav-item nav-lang-item">LV</li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="introduction">
+      <section class="introduction" id="js-introduction">
         <video class="video" id="js-video">
           <!-- <video class="video-poster js-play-btn" src="https://sparkleheart.org/wp-content/uploads/2020/09/SparkleHeart_animacija_V4.mp4" width="1366px" height="height: 722px" poster="assets/img/Sparkle_Video.jpg"></video> -->
         </video>
@@ -126,8 +133,11 @@
             <img src="assets/img/logo_Linearis.png" alt="Kompānijas logo.">
           </div>
         </div>
-
       </section>
+
+      <div class="topButtonContainer">
+        <button class="toTop-Button" id="js-goToTopButton" onclick="goToTop()" title="Go to top">&#10143;</button>
+      </div>
     </main>
 
     <footer class="footer">
