@@ -210,14 +210,12 @@ body {
   top: 47px;
   z-index: 1;
   cursor: pointer;
-
-  background: url(../img/play.png) no-repeat center,
-    url(../img/Sparkle_Video.jpg);
-  /* filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25)); */
+  outline:none;
 }
 
-.video.active {
-  background-color: white;
+.video-z-index {
+  position: absolute;
+  z-index: 4;
 }
 
 .about-company {
@@ -330,6 +328,7 @@ body {
 
   background-color: #ffa800;
   cursor: pointer;
+  outline:none;
 }
 
 .btn {
@@ -422,12 +421,14 @@ input[type="checkbox"] {
   appearance: none;
   background-color: rgba(196, 196, 196, 0.4);
   cursor: pointer;
+  outline:none;
 }
 
 input[type="checkbox"]:checked {
   background-color: #ff8a00;
   text-align: center;
   line-height: 0.83rem;
+  outline:none;
 }
 
 .text-block {
@@ -446,6 +447,7 @@ input[type="checkbox"]:checked {
 
   border-radius: 50px;
   border: 0;
+  outline:none;
 
   font-size: 24px;
   line-height: 29px;
@@ -1025,7 +1027,7 @@ input[type="checkbox"]:checked {
 
   .nav-lang-item {
     position: relative;
-    top: -460px;
+    top: -480px;
   }
 
   .inner-nav {
@@ -1041,7 +1043,7 @@ input[type="checkbox"]:checked {
 
   .nav-item {
     margin: 20px 0;
-    padding: 0;
+    padding-bottom: 5px;
 
     font-size: 25px;
     color: #000;
@@ -1370,7 +1372,7 @@ input[type="checkbox"]:checked {
 
   .nav-lang-item {
     position: relative;
-    top: -530px;
+    top: -550px;
   }
 
   .inner-nav {
@@ -1386,7 +1388,7 @@ input[type="checkbox"]:checked {
 
   .nav-item {
     margin: 25px 0;
-    padding: 0;
+    padding-bottom: 5px;
 
     font-size: 25px;
     color: #000;

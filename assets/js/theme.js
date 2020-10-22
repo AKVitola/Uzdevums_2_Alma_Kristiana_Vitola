@@ -1,7 +1,19 @@
-// document.getElementById("js-video").addEventListener("click", function() {
-//   this.innerHTML = '<iframe src="https://sparkleheart.org/wp-content/uploads/2020/09/SparkleHeart_animacija_V4.mp4" type="video/mp4" width="1366px" height="722px" frameborder="0">';
-//   this.className = "active";
-// });
+
+        //====== Play video after clicking on image ======
+        //===============================================
+
+
+
+//Toggle class that adds a higher z-index to the video when played
+
+const video = document.getElementById("js-video");
+
+video.addEventListener("click", function() {
+  this.classList.toggle("video-z-index");
+});
+
+//Show play button image if video ends or is paused.
+//Start video after clicking on play button image and hide it.
 
 
         // ====== Overlay menu======
