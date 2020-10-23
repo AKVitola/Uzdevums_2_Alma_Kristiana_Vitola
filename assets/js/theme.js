@@ -1,19 +1,44 @@
+        //====== Play video in an overlay ======
+        //============================
 
-        //====== Play video after clicking on image ======
-        //===============================================
-
-
-
-//Toggle class that adds a higher z-index to the video when played
-
+const videoImg = document.getElementById("js-video-img");
 const video = document.getElementById("js-video");
+const pageOverlay = document.getElementById("js-ovelay");
+const pageBcground = document.getElementById("js-video-bcground");
 
-video.addEventListener("click", function() {
-  this.classList.toggle("video-z-index");
+videoImg.addEventListener("click", function() {
+  showVideo();
 });
 
-//Show play button image if video ends or is paused.
-//Start video after clicking on play button image and hide it.
+pageBcground.addEventListener("click", function() {
+  hideVideo();
+});
+
+function showVideo() {
+  pageOverlay.style.display = "block";
+  pageBcground.style.display = "block";
+  video.style.display = "block";
+  playVidDelay(1000);
+  video.currentTime = 0;
+  stopPageScrolling();
+  hideButtonInOverlayMenu();
+
+}
+
+function hideVideo() {
+  video.style.display = "none";
+  pageOverlay.style.display = "none";
+  pageBcground.style.display = "none";
+  video.pause();
+  startPageScrolling();
+  displayGoToTopButton();
+}
+
+function playVidDelay(delay) {
+  setTimeout(function(){
+     video.play();
+  }, delay)
+}
 
 
         // ====== Overlay menu======
@@ -61,7 +86,8 @@ for (let i = 0; i < liElements.length; i++) {
 
 function closeMenuOnSelect() {
   if (document.body.offsetWidth <= 600) {
-    closeMenu();}
+    closeMenu();
+  }
 }
 
         //====== Go to top button ======

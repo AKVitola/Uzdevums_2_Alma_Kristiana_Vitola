@@ -16,7 +16,7 @@
   <div class="container">
     <header class="header">
       <a href="/">
-        <img class="black-logo" src="assets/img/BlackLogo.png" alt="Melnbalts kompānijas logo.">
+        <img class="black-logo" src="assets/img/BlackLogo.jpg" alt="Melnbalts kompānijas logo.">
       </a>
 
       <span class="menu-icon" onclick="toggleMenu()">
@@ -42,12 +42,14 @@
 
     <main>
       <section class="introduction" id="js-introduction">
-        <div id="js-video">
-          <video class="video" poster="assets/img/Sparkle_Video.jpg" type="video/mp4" controls>
-            Jūsu interneta pārlūks neļauj atskaņot video.
-            <source src="https://sparkleheart.org/wp-content/uploads/2020/09/SparkleHeart_animacija_V4.mp4">
-          </video>
-        </div>
+          <div class="video-placeholder" id="js-video-img"></div>
+          <div class="video-overlay" id="js-ovelay">
+            <div class="video-bcground" id="js-video-bcground"></div>
+            <video class="video" id="js-video" type="video/mp4" controls controlsList="nodownload">
+              Jūsu interneta pārlūks neļauj atskaņot video.
+              <source src="https://sparkleheart.org/wp-content/uploads/2020/09/SparkleHeart_animacija_V4.mp4">
+            </video>
+          </div>
         <p class="about-company">SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji
         un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem. Mēs
         esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.</p>
@@ -201,12 +203,9 @@
         <div class="copyright private">
           <p class="copyright-text">Privātuma politika</p>
         </div>
-
       </div>
-
     </footer>
   </div>
-
 
   <script src="assets/js/theme.js"></script>
 </body>
