@@ -169,9 +169,7 @@ body {
   height: 2px;
   width: 20px;
   background-color: #000;
-  margin: 4.5px 0;
-
-  transition: 0.4s;
+  margin-bottom: 4.5px;
   z-index: 2;
 }
 
@@ -427,7 +425,6 @@ input[type="tel"] {
   height: 232px;
   padding-left: 12px;
   padding-top: 11px;
-
   margin-bottom: 12px;
 }
 
@@ -437,13 +434,14 @@ input[type="tel"] {
 
 .small-form-text {
   font-size: 14px;
-  line-height: 17px;
   color: #2f4858;
+  line-height: 15px;
 }
 
 .checkbox {
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 34px;
+  margin-left: 3px;
 }
 
 input[type="checkbox"] {
@@ -464,7 +462,6 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   background-color: #ff8a00;
   text-align: center;
-  line-height: 0.83rem;
   outline: none;
 }
 
@@ -472,7 +469,7 @@ input[type="checkbox"]:checked {
   width: 573px;
   display: inline;
   float: right;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .submit-form-btn {
@@ -733,7 +730,7 @@ input[type="checkbox"]:checked {
   .video-placeholder {
     width: 320px;
     height: 169px;
-    background-size: 50px 48px, contain;
+    background-size: 70px 68px, contain;
   }
 
   .video {
@@ -742,7 +739,7 @@ input[type="checkbox"]:checked {
   }
 
   .about-company {
-    top: 287px;
+    top: 296px;
     left: 20px;
     width: 280px;
     height: 124px;
@@ -754,7 +751,7 @@ input[type="checkbox"]:checked {
   /* ===Gallery section===*/
 
   .flex-container-gallery {
-    top: 357px;
+    top: 390px;
     display: flex;
   }
 
@@ -800,30 +797,31 @@ input[type="checkbox"]:checked {
   }
 
   .flex-container-gallery::before {
-    top: 87px;
+    top: 80px;
     z-index: 1;
   }
 
   .flex-container-gallery::after {
-    top: 422px;
+    top: 426px;
   }
 
   /* ===Contacts section=== */
 
   .flex-container-contacts {
-    top: 930px;
+    top: 978px;
     left: 20px;
     width: 280px;
     flex-direction: column;
   }
 
   .contacts-row.upper-text {
-    margin-bottom: 160px;
+    margin-bottom: 162px;
+    margin-left: 7px;
   }
 
   .flex-container-btn {
-    top: 987px;
-    left: 43.5px;
+    top: 1036px;
+    left: 47.5px;
     width: 233px;
     flex-direction: column;
   }
@@ -838,7 +836,7 @@ input[type="checkbox"]:checked {
   }
 
   .contact-form {
-    top: 1380px;
+    top: 1421px;
     left: 20px;
     width: 280px;
   }
@@ -848,11 +846,16 @@ input[type="checkbox"]:checked {
   input[type="tel"],
   .form-field {
     width: 280px;
+    height: 35px;
 
     margin-bottom: 10px;
 
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .form-field {
+    padding-top: 2.5px;
   }
 
   .form-title {
@@ -864,6 +867,9 @@ input[type="checkbox"]:checked {
 
   .comment-field {
     height: 150px;
+
+    margin-bottom: 4px;
+    padding-top: 9px;
   }
 
   .small-form-text {
@@ -874,7 +880,8 @@ input[type="checkbox"]:checked {
   }
 
   .checkbox {
-    margin-top: 10px;
+    margin-top: 11px;
+    margin-left: 0;
   }
 
   .text-block {
@@ -882,14 +889,15 @@ input[type="checkbox"]:checked {
     display: inline;
     float: right;
 
-    margin-top: 10px;
+    margin-top: 12px;
+    line-height: 15px;
   }
 
   .submit-form-btn {
     width: 140px;
     height: 48px;
-    left: 70px;
-    top: 548px;
+    left: 71px;
+    top: 501px;
 
     font-size: 18px;
     line-height: 22px;
@@ -898,12 +906,13 @@ input[type="checkbox"]:checked {
   /* ===Benefactors section=== */
 
   .benefactors {
-    top: 2093px;
+    top: 2070px;
     height: 732px;
   }
 
   .benefactors-titel {
     width: 320px;
+    top: 104px;
     left: 0;
   }
 
@@ -913,10 +922,10 @@ input[type="checkbox"]:checked {
   }
 
   .flex-container-logos {
-    width: 280px;
-    height: 220px;
-    left: 20px;
-    top: 170px;
+    width: 296px;
+    height: 172px;
+    left: 12px;
+    top: 188px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -930,21 +939,20 @@ input[type="checkbox"]:checked {
 
   .logo-linearis img {
     width: 48px;
-    margin-left: 60px;
-    margin-right: 40px;
+    margin: 6px 40px 0 45px;
   }
 
   /* ===Footer=== */
 
   .footer {
-    top: 2527px;
-    height: 483px;
+    top: 2470px;
+    height: 499px;
     background-size: cover;
   }
 
   .flex-container-footer {
     left: 20px;
-    top: 60px;
+    top: 57px;
     bottom: 0;
   }
 
@@ -965,7 +973,7 @@ input[type="checkbox"]:checked {
   .adress {
     position: absolute;
     right: -65px;
-    top: 135px;
+    top: 125px;
     width: 300px;
 
     font-size: 12px;
@@ -973,10 +981,14 @@ input[type="checkbox"]:checked {
     text-align: left;
   }
 
+  .adress-details > p.street {
+    padding-bottom: 10px;
+  }
+
   .owner-name {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .route-to-accoount {
@@ -989,11 +1001,12 @@ input[type="checkbox"]:checked {
   .route-to-accoount > p {
     margin: 0;
     font-weight: bold;
+    letter-spacing: 0.4px;
   }
 
   .social-media {
-    right: 168px;
-    top: 272px;
+    right: 164px;
+    top: 280px;
     height: 25px;
 
     margin-top: 35px;
@@ -1005,15 +1018,22 @@ input[type="checkbox"]:checked {
     height: 25px;
   }
 
+  .fb-icon {
+    padding-right: 34.5px;
+  }
+
   .copyright {
-    bottom: 51px;
+    bottom: 54px;
     width: 280px;
+    line-height: 13.41px;
   }
 
   .private {
     width: 200px;
-    bottom: 30px;
-    right: 37px;
+    bottom: 33px;
+    right: 35px;
+
+    margin-top: 5px;
   }
 
   .copyright-text {
@@ -1114,7 +1134,7 @@ input[type="checkbox"]:checked {
   .video-placeholder {
     width: 481px;
     height: 254px;
-    background-size: 56px 53px, contain;
+    background-size: 86px 83px, contain;
   }
 
   .video {
@@ -1405,7 +1425,8 @@ input[type="checkbox"]:checked {
   }
 
   .black-logo {
-    left: 80px;
+    left: 81px;
+    top: 3px;
     width: 128px;
     height: auto;
   }
@@ -1456,32 +1477,32 @@ input[type="checkbox"]:checked {
   /* ===Menu Icon=== */
 
   .menu-icon {
-    top: 25px;
-    right: 80px;
+    top: 27.3px;
+    right: 76px;
 
     display: block;
-    width: 30px;
+    width: 28px;
     height: 50px;
   }
 
   .bar1,
   .bar2,
   .bar3 {
-    width: 30px;
-    height: 0.1px;
+    width: 25px;
+    height: 2px;
 
-    margin: 7px 0;
-    padding: 2px;
-    border-radius: 70px;
+    margin-bottom: 5.5px;
+    border: 1.3px solid #000;
+    border-radius: 43%;
   }
 
   /* ===Introduction section=== */
 
   .video-placeholder {
-    top: 71px;
+    top: 70px;
     width: 768px;
     height: 406px;
-    background-size: 66px 63px, contain;
+    background-size: 126px 123px, contain;
   }
 
   .video {
@@ -1492,8 +1513,8 @@ input[type="checkbox"]:checked {
   .about-company {
     width: 608px;
     height: 140px;
-    left: 80px;
-    top: 627px;
+    left: 81px;
+    top: 630px;
   }
 
   /* ===Gallery section===*/
@@ -1546,26 +1567,39 @@ input[type="checkbox"]:checked {
 
   .contact-form {
     left: 80px;
-    top: 1597px;
+    top: 1590px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    height: 39px;
   }
 
   .form-title {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
+    margin-right: 3px;
+  }
+
+  .comment-field {
+    margin-bottom: 11px;
   }
 
   .text-block {
-    width: 550px;
+    width: 580px;
     display: inline;
     float: right;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .checkbox {
-    margin-top: 13px;
+    margin-top: 12px;
+    margin-left: 1px;
   }
 
   .submit-form-btn {
-    top: 589px;
+    top: 572px;
+    left: 213px;
   }
 
   /* ===Benefactors section=== */
@@ -1576,8 +1610,8 @@ input[type="checkbox"]:checked {
   }
 
   .benefactors-titel {
-    left: 273px;
-    top: 56px;
+    left: 274px;
+    top: 66px;
     width: 222px;
     height: 34px;
   }
@@ -1588,8 +1622,8 @@ input[type="checkbox"]:checked {
   }
 
   .flex-container-logos {
-    left: 80px;
-    top: 126px;
+    left: 81px;
+    top: 123px;
     width: 608px;
   }
 
@@ -1609,14 +1643,20 @@ input[type="checkbox"]:checked {
   /* ===Footer=== */
 
   .footer {
-    top: 2617px;
-    height: 376px;
+    top: 2610px;
+    height: 409px;
+    background-size: cover;
   }
 
   .flex-container-footer {
-    right: 80px;
-    top: 80px;
+    right: 86px;
+    top: 85px;
     bottom: 0;
+  }
+
+  .golden-logo {
+    position: inherit;
+    left: 18px;
   }
 
   .golden-logo img {
@@ -1625,16 +1665,18 @@ input[type="checkbox"]:checked {
   }
 
   .copyright {
-    bottom: 40px;
+    bottom: 45px;
   }
 
   .copyright-text {
     font-size: 16px;
     line-height: 20px;
+    margin-left: 18px;
   }
 
   .social-media {
-    bottom: 90px;
+    bottom: 94px;
+    right: -6px;
   }
 
   .fb-icon {
@@ -1648,8 +1690,8 @@ input[type="checkbox"]:checked {
 
   .owner-name {
     position: absolute;
-    top: 144px;
-    right: 473px;
+    top: 150px;
+    right: 451px;
     width: 225px;
   }
 
@@ -1663,7 +1705,9 @@ input[type="checkbox"]:checked {
   }
 
   .adress {
-    top: 40px;
+    top: 44px;
+    right: -6px;
+    line-height: 20px;
   }
 
   .route-to-accoount {
@@ -1671,8 +1715,11 @@ input[type="checkbox"]:checked {
   }
 
   .route-to-accoount > p {
+    margin-top: 12px;
     margin: 0;
     font-weight: bold;
+    line-height: 21px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -1711,7 +1758,7 @@ input[type="checkbox"]:checked {
   .video-placeholder {
     width: 992px;
     height: 524px;
-    background-size: 86px 83px, contain;
+    background-size: 106px 103px, contain;
   }
 
   .video {
@@ -1840,7 +1887,7 @@ input[type="checkbox"]:checked {
   .video-placeholder {
     width: 1200px;
     height: 634px;
-    background-size: 106px 103px, contain;
+    background-size: 126px 123px, contain;
   }
 
   .video {

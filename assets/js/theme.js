@@ -85,7 +85,7 @@ for (let i = 0; i < liElements.length; i++) {
 }
 
 function closeMenuOnSelect() {
-  if (document.body.offsetWidth <= 600) {
+  if (document.body.offsetWidth <= 1000) {
     closeMenu();
   }
 }
